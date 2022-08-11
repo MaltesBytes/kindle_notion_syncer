@@ -5,7 +5,6 @@ import os
 database_ID = os.environ.get("database_ID")
 secret_Key = os.environ.get("secret_Key")
 
-
 def get_pageid_for_title(title):
     url = f"https://api.notion.com/v1/databases/{database_ID}/query"
     payload = {
@@ -190,9 +189,6 @@ def create_page(title, author, paragraph_list):
                         }
                     },
                 ]
-            },        
-            "Type": {
-                    "select": [{"name":"Kindle"}],
             }
         }
     }

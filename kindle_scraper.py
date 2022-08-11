@@ -40,7 +40,7 @@ def get_highlights(email, password):
     print("logging in...")
 
     # wait for page to load
-    elem = WebDriverWait(driver, 120).until(
+    elem = WebDriverWait(driver, 45).until(
     EC.presence_of_element_located((By.ID, "library-section"))
     )
 
