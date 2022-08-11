@@ -189,6 +189,9 @@ def create_page(title, author, paragraph_list):
                         }
                     },
                 ]
+            },        
+            "Type": {
+                    "select": [{"name":"Kindle"}],
             }
         }
     }
